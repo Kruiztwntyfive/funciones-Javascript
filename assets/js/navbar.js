@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
             </button>
             <ul id="nav-menu">
                 <li><a href="#">INICIO</a></li>
-                <li><a href="#sintaxis">SINTAXIS</a></li>
+                <li><a href="sintaxis.html">SINTAXIS</a></li>
                 <li><a href="../variables/variables.html">VARIABLES</a></li>
-                <li><a href="#variables">TIPADO</a></li>
-                <li><a href="#funciones-basicas">FUNCIONES BÁSICAS</a></li>
-                <li><a href="#funciones-organicas">FUNCIONES ORGANICAS</a></li>
+                <li><a href="../variables-constantes/tipado-dinamico.html">TIPADO</a></li>
+                <li><a href="funciones-basicas.html">FUNCIONES BÁSICAS</a></li>
+                <li><a href="funciones-organicas.html">FUNCIONES ORGANICAS</a></li>
             </ul>
         </nav>
         `;
@@ -33,9 +33,18 @@ document.addEventListener("DOMContentLoaded", function () {
             // Close menu when clicking on a link
             const navLinks = document.querySelectorAll("#nav-menu a");
             navLinks.forEach(link => {
+                // Highlight active link
+                if (link.href === window.location.href) {
+                    link.classList.add("nav-active");
+                }
+
                 link.addEventListener("click", function () {
                     hamburger.classList.remove("active");
                     navMenu.classList.remove("active");
+
+                    // Update active state on click (for anchor links on same page)
+                    navLinks.forEach(l => l.classList.remove("nav-active"));
+                    this.classList.add("nav-active");
                 });
             });
         }
