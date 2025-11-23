@@ -42,32 +42,29 @@ const array2 = [...array1, 4, 5, 6];
 
 console.log(array2); // Resultado: [1, 2, 3, 4, 5, 6]
 
-const boton=document.querySelector("button");
-
-
 
 //Ejemplo 2 - Copiar arrays
 
-const original = [1, 2, 3];
+const original = [7, 9, 11];
 const copia = [...original];
 
-console.log(copia); // [1, 2, 3]
+console.log(copia); // [7, 9, 11]
 
 //Ejemplo 3 - Agregar elementos arrays
 
-const numeros = [1, 2, 3];
-const nuevoNumero = 4;
+const numeros = [20, 22, 24];
+const nuevoNumero = 26;
 const actualizado = [...numeros, nuevoNumero];
 
-console.log(actualizado); // [1, 2, 3, 4]
+console.log(actualizado); // [20, 22, 24, 26]
 
 // Ejemplo 4 - Concatenar arrays
 
-const array3 = [1, 2, 3];
-const array4 = [4, 5, 6];
+const array3 = [30, 31, 32];
+const array4 = [33, 34, 35];
 const arrayConcatenado = [...array3, ...array4];
 
-console.log(arrayConcatenado); // Resultado: [1, 2, 3, 4, 5, 6]
+console.log(arrayConcatenado); // Resultado: [30, 31, 32, 33, 34, 35]
 
 //Ejemplo 5 - Manipulación de dos arrays anidados
 
@@ -90,9 +87,9 @@ console.log(combinada); // [1, 2, 3, 4]
 
 //Ejemplo 7 - Desestructuración y spread
 
-const persona = { nombre: 'Luis', edad: 28, profesion: 'Ingeniero' };
+const persona = { nombre: 'Naia', edad: 37, pueblo: 'Bermeo' };
                 
                 const { nombre, ...resto } = persona;
                 
-                console.log(nombre); // 'Luis'
-                console.log(resto); // { edad: 28, profesion: 'Ingeniero' }
+                console.log(nombre); // 'Naia'
+                console.log(resto); // { edad: 37, pueblo: 'Bermeo' }
