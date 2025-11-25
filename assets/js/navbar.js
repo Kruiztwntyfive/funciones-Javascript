@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
             </button>
             <ul id="nav-menu">
                 <li><a href="../index.html">INICIO</a></li>
-                <li><a href="sintaxis.html">SINTAXIS</a></li>
+                <li><a href="../sintaxisjs/sintaxisjs.html">SINTAXIS</a></li>
                 <li><a href="../variables/variables.html">VARIABLES</a></li>
                 <li><a href="../variables-constantes/tipado-dinamico.html">TIPADO</a></li>
-                <li><a href="funciones-basicas.html">FUNCIONES BÁSICAS</a></li>
+                <li><a href="../funciones-basicas/funciones-basicas.html">FUNCIONES BÁSICAS</a></li>
                 <li><a href="../funciones-organicas/funciones-organicas.html">FUNCIONES ORGANICAS</a></li>
             </ul>
         </nav>
