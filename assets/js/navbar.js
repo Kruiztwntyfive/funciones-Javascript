@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <li><a href="../sintaxisjs/sintaxisjs.html">SINTAXIS</a></li>
                 <li><a href="../variables/variables.html">VARIABLES</a></li>
                 <li><a href="../variables-constantes/tipado-dinamico.html">TIPADO</a></li>
-                <li><a href="../funciones-basicas/funciones-basicas.html">FUNCIONES BÁSICAS</a></li>
+                <li><a href="../funcionesbasicas/indexfb.html">FUNCIONES BÁSICAS</a></li>
                 <li><a href="../funciones-organicas/funciones-organicas.html">FUNCIONES ORGANICAS</a></li>
             </ul>
         </nav>

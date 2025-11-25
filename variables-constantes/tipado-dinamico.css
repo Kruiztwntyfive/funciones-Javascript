@@ -16,18 +16,6 @@ h3 {
     user-select: none;
 }
 
-.pre-code {
-    /* width: 75%; */
-    margin: 1rem auto;
-    background-color: #333;
-    color: #f2f2f2;
-    padding: 1rem;
-    border-radius: 12px;
-    font-weight: 500;
-    text-align: start;
-    overflow-x: auto;
-    white-space: pre;
-}
 
 .btn-containers {
     margin-top: 1rem;
