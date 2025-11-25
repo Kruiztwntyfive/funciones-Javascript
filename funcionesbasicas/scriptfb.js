@@ -32,15 +32,18 @@ saludar("Anita");
 function sumar(a, b) {
     return a + b;
 }
-let x = sumar(3, 4);
-console.log(x);
+const x= sumar(3, 4);
 
-/*ESTO ES UNA FUNCIÓN FLECHA*/
-const multiplicar = (a, b) => {
-    return a * b;
-};
-let resultado = multiplicar(5, 6);
-console.log(resultado);
+
+
+
+
+
+
+
+
+
+
 
 /*ESTO ES UNA FUNCIÓN PARA LIMPIAR LA CONSOLA*/  
 function limpiarConsola() {

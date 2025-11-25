@@ -71,6 +71,10 @@
             background-color: #585a66;
         }
 
+
+
+
+
         #container-funcion{
             display:none;
             opacity: 0;
@@ -101,6 +105,11 @@
             display:none;
             opacity: 0;
         }
+
+
+
+
+
 
 
         #activo1:checked ~ #container-funcion {
@@ -139,6 +148,11 @@
                opacity: 1;  
         }
 
+
+
+
+
+        
                #video-background {
                 position: fixed;
                 top: 0;

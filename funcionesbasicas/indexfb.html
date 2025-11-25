@@ -20,87 +20,93 @@
     <!--FUNCIONES BASICAS-->
 
 
-    <div class="caja">
-        <label for="activo1">
-            <h1>Funciones Básicas de JavaScript</h1>
-        </label>
+  <div class="caja">
+            <label for="activo1">
+                <h1>Funciones Básicas de JavaScript</h1>
+            </label>
         <input type="checkbox" id="activo1" hidden>
-        <div id="container-funcion">
+  <div id="container-funcion">
             <h3>¿QUÉ ES UNA FUNCIÓN?</h3>
 
-            <p>
+        <p>
                 Una función es un grupo de instrucciones (líneas de código) que puedes guardar con un nombre.
                 <br>Después, puedes usar ese nombre para ejecutar todas esas instrucciones cuando quieras.
-            </p>
-            <p>
+       </p>
+        <p>
                 Piensa en una cafetera: aprietas el botón, la cafetera hace café.
                 No tienes que hacer todo tú (calentar el agua, filtrar el café, etc.),
                 la cafetera ya sabe cómo hacerlo.
-            </p>
-            <p>
+       </p>
+        <p>
                 En programación, una función funciona igual:<br>le das un nombre,<br>
                 le enseñas qué debe hacer,<br> y luego la llamas para que lo haga.
-            </p>
+       </p>
 
 
             <h3>¿CÓMO SE CREA UNA FUNCIÓN EN JAVASCRIPT?</h3>
-            <p> <strong>function saludar() { console.log("Hola");} </strong> </p>
-            <p>
+        <p> <strong>function saludar() { console.log("Hola");} </strong> 
+       </p>
+        <p>
                 <strong>function</strong>: indica que estamos creando una función.<br>
                 <strong>saludar</strong>: nombre de la función.<br>
                 <strong>( )</strong>: paréntesis para recibir datos (parámetros).<br>
                 <strong>{ }</strong>: llaves con el código a ejecutar.
-            </p>
+        </p>
             <button onclick="saludarDemo()">EJEMPLO</button>
             <button class="limpiar" onclick="limpiarConsola()">LIMPIAR</button>
-        </div>
-    </div>
-
-    <div class="caja">
-        <label for="activo2">
-            <h3>DECLARACIÓN</h3>
-        </label>
+ </div>
+ </div>
+<!--APARTADO de DECLARACIÓN-->  
+ <div class="caja">
+                <label for="activo2">
+                    <h3>DECLARACIÓN</h3>
+                </label>
         <input type="checkbox" id="activo2" hidden>
-        <div id="container-declaracion">
-            <p>La palabra “declarar” en programación significa anunciar o decirle al programa que algo existe. Es como
+ <div id="container-declaracion">
+        <p>La palabra “declarar” en programación significa anunciar o decirle al programa que algo existe. Es como
                 decirle a JavaScript:
                 “Voy a crear algo con este nombre, guárdalo porque luego lo voy a usar”.
                 <br>Cuando declaras una variable, le estás diciendo al programa que existe un espacio en memoria con ese
                 nombre.
+        </p>
                 <br>
                 <hr>
                 <br>
-                <strong> let nombre="Manolo"; </strong> <br><br>
+        <p>       <strong> let nombre="Manolo"; </strong> <br><br>
                 Aquí estás declarando una variable llamada <strong>nombre</strong> y asignándole el valor
                 <strong>"Manolo"</strong>.
                 Javascript ahora sabe que existe una variable llamada <strong>nombre</strong> y que contiene el valor
                 <strong>"Manolo"</strong>.
                 <br><br>
-            <h4>¿QUE HACE JAVASCRIPT CON ESTO?</h4><br>
-            <P>- Crea un espacio en la memoria del computador.
+           <h4>¿QUE HACE JAVASCRIPT CON ESTO?</h4>
+        <p>
+                <br>- Crea un espacio en la memoria del computador.
                 <br>- Le pone una etiqueta (el nombre de la variable <strong> nombre</strong>).
                 <br>- Guarda el valor "Manolo" dentro de ese espacio.
-            </P>
+        </p>
             <button onclick="mostrarNombreConsola()">EJEMPLO</button>
             <button class="limpiar" onclick="limpiarConsola()">LIMPIAR</button>
-        </div>
-    </div>
+ </div>
+ </div>
 
-
-    <div class="caja">
-        <label for="activo3">
-            <h3>INVOCACIÓN / LLAMADA</h3>
-        </label>
+<!--APARTADO de INVOCAIÓN/LLAMADA-->  
+  <div class="caja">
+            <label for="activo3">
+                <h3>INVOCACIÓN / LLAMADA</h3>
+            </label>
         <input type="checkbox" id="activo3" hidden>
-        <div id="container-invocacionllamada">
-            <p>Para que la función realmente haga algo, debes invocarla o llamarla.
-                <br>Eso significa: decirle a JavaScript que ejecute el codigo dentro de esa función.
-            <h4>¿COMO SE INVOCA UNA FUNCIÓN?</h4>
-            <p><strong> nombreDeLaFuncion( ) ;</strong> <br>
+  <div id="container-invocacionllamada">
+      <p>       Para que la función realmente haga algo, debes invocarla o llamarla.
+            <br>Eso significa: decirle a JavaScript que ejecute el codigo dentro 
+             de esa función. <br>
+            <br>¿COMO SE INVOCA UNA FUNCIÓN?</h4>
+            <br>
+            <br>
+            <strong> nombreDeLaFuncion( ) ;</strong> <br>
 
                 () los paréntesis indican que quieres ejecutar la función.
 
-                <br>Incluso si la función no recibe datos, los paréntesis son obligatorios para ejecutarla.
+                <br>Incluso si la función no recibe datos, los paréntesis son obligatorios para ejecutarla.</p>
                 <br><br>EJEMPLO:
                 <br><strong> saludar( ) { console.log("¡Hola!"); }</strong>
                 <br><br>
@@ -108,8 +114,8 @@
                 <br> <strong> saludar( ) ;</strong>
                 <hr>
                 <br><br>
-            <h4>INVOCACIÓN CON PARÁMETROS:</h4>
-            Si la función necesita datos, los pones dentro de los paréntesis:
+            <h4>INVOCACIÓN CON PARÁMETROS:</h4> 
+        <p>  Si la función necesita datos, los pones dentro de los paréntesis:
             <br> <br>
             <strong> saludarPersona(nombre) {console.log("Hola, " + nombre + "!") ; }
                 <br>
@@ -119,27 +125,28 @@
             <br><br>"Ana" y "Carlos" son argumentos.
             <br>
             nombre es el parámetro dentro de la función.<br>
+        </p>    
             <button onclick="saludarPersona('Lupita')">EJEMPLO</button>
             <button class="limpiar" onclick="limpiarConsola()">LIMPIAR</button>
-            </p>
-        </div>
-    </div>
-    <div class="caja">
+         
+  </div>
+  </div>
+
+    <!--APARTADO de NOMINADAS y ANONIMAS-->  
+     
+  <div class="caja">
         <label for="activo4">
             <h3>FUNCIONES NOMINADAS Y ANÓNIMAS</h3>
         </label>
         <input type="checkbox" id="activo4" hidden>
-        <div id="container-nominadasyanonimas">
-            Cuando creas una función, puede tener nombre o no tener nombre.<br>
-            Si tiene nombre, función nominada (o nombrada).
-
-
-            Si no tiene nombre es, función anónima.
+  <div id="container-nominadasyanonimas">
+       <p> Cuando creas una función, puede tener nombre o no tener nombre.<br>
+            Si tiene nombre, función nominada (o nombrada).Si no tiene nombre es, función anónima.
+      </p>
             <br><br>
             <h4>NOMINADA:</h4>
-            <p><strong>
-
-                    function saludarNom() {
+      <p>   <strong>
+                <br> function saludarNom() {
                     console.log("Hola (nominada)");
                     }</strong>
                 <br><br>
@@ -148,46 +155,52 @@
             - reconocerla<br>
             - guardarla con ese nombre<br>
             - llamarla más adelante<br>
-            <br>Se invoca así: <strong> saludar( );</strong>
-            </p>
+            <br>Se invoca así: <strong> saludar( );</strong> 
+      </p>      
+     
 
             <br>
             <br>
             <h4>ANÓNIMA:</h4>
-            <p><strong>
+      <p>      <strong>
                     <br> function() {console.log("Hola (anónima)");};</strong></p>
             <br>
-            Como no tiene nombre, no puedes llamarla así: ???( ) ; <br>no existe un nombre para escribir aquí
-
+            Como no tiene nombre, no puedes llamarla así: ???( ) ; <br>no existe un nombre para escribir aquí 
+                      <hr>
             <br> <br>
-            <h4> ¿Cómo se usa una función anónima?</h4>
-
+             ¿COMO SE USA UNA FUNCIÓN ANONIMA?
+            <br><br>
             <br> La guardas dentro de una variable:
             <br> <strong> const saludar = function( ) {console.log("Hola!");}; </strong>
             <br><br>ahora si se puede usar:
             <br> <strong> saludar( ) ; </strong>
-            </p>
+      </p>
             <button onclick="saludarAnonima()">EJEMPLO</button>
             <button class="limpiar" onclick="limpiarConsola()">LIMPIAR</button>
-        </div>
-    </div>
+  </div>
+  </div>
 
-    <div class="caja">
-        <label for="activo5">
-            <h3>PARÁMETROS Y ARGUMENTOS</h3>
-        </label>
-        <input type="checkbox" id="activo5" hidden>
-        <div id="container-parametrosyargumentos">
 
-            <p> Los parámetros son variables que una función espera
+
+<!--APARTADO de PARAMETROS y ARGUMENTOS-->  
+
+
+  <div class="caja">
+         <label for="activo5">
+              <h3>PARÁMETROS Y ARGUMENTOS</h3>
+         </label>
+     <input type="checkbox" id="activo5" hidden>
+  <div id="container-parametrosyargumentos">
+
+               <p> Los parámetros son variables que una función espera
                 recibir para poder trabajar.
                 Sirven para que la función pueda usar información que
                 tú le envías desde afuera.
                 La función por sí sola no sabe a quién saludar,
                 qué sumar, qué mostrar…
-                Así que necesita recibir datos.<br><br>
+                Así que necesita recibir datos. </p><br><br>
 
-                Ejemplo claro:
+               <p> Ejemplo claro: </p>
                 <br><br>
                 <strong> sumar(a, b) {
                     console.log(a + b);
@@ -202,7 +215,7 @@
                 <br> <br>
 
 
-                ¿CÓMO SE USA EL PARAMETRO?<br><br>
+                <p>¿CÓMO SE USA EL PARAMETRO?</p><br><br>
                 <strong>function saludar(nombre) </strong>
                 <br><br>
                 Declaras la función con un parámetro (una variable vacía):
@@ -213,73 +226,75 @@
                 <br><br><strong>saludar("Anita");</strong>
                 <br><br>
                 Ese dato reemplaza al parámetro cuando llamas a la función.
-                <br><br>
-                Y la funcion imprime:
-            </p>
+                Y la funcion imprime: <br>
+           
             <button onclick="saludar('Anita')">EJEMPLO</button>
             <button class="limpiar" onclick="limpiarConsola()">LIMPIAR</button>
-            <p></p>
-        </div>
-    </div>
+            
+ </div>
+ </div>
 
-    <div class="caja">
-        <label for="activo6">
+<!--APARTADO de RETURN-->
+
+  <div class="caja">
+    <label for="activo6">
             <h3>RETURN</h3>
-        </label>
+    </label>
         <input type="checkbox" id="activo6" hidden>
-        <div id="container-return"> 
-            return es una palabra clave que sirve
+  <div id="container-return"> 
+       <p>  return es una palabra clave que sirve
             para devolver un valor desde una función hacia quien la llamó.
             La función calcula algo y con return te entrega el resultado.
             Sin return, la función solo ejecuta cosas, pero no devuelve nada.
             <br><br>EJEMPLO:
-
+      </p>  
             <br><br><strong> function sumar(a, b) { return a + b;}
 
-                <br>let resultado = sumar(3, 4);console.log(resultado); // 7 </strong><br><br>
-            ¿QUE HACE <strong>RETURN</strong>?<br>
+            <br>let resultado = sumar(3, 4);console.log(resultado); // 7 </strong><br><br>
+            ¿QUE HACE <strong>RETURN</strong>?<br><br>
 
             - Calcula a + b <br>
             - Devuelve ese número <br>
-            - Te permite guardarlo o usarlo más adelante<br>
+            - Te permite guardarlo o usarlo más adelante<br><br>
 
-            <p>Ejemplo sin Return:</p>
+            <p>Ejemplo sin Return:</p><br>
             <strong> function sumarSinReturn(a, b) { console.log(a + b);}
                 <br>let x = sumarSinReturn(3, 4);
             </strong><br><br>
 
-            <p>Ejemplo con Return:</p>
+            <p>Ejemplo con Return:</p><br>
             <strong> function sumarConReturn(a, b) { return a + b;}
-                <br>let x = sumarConReturn(3, 4);
-                console.log(x);
+            <br>let x = sumarConReturn(3, 4); console.log(x);
             </strong><br><br>
 
 
 
-            <button onclick="sumar()">EJEMPLO CON</button>
+            <button onclick="console.log(sumar(3, 4))">EJEMPLO CON</button>
             <button class="limpiar" onclick="limpiarConsola()">LIMPIAR</button>
-        </div>
-        </div>
+ </div>
+ </div>
 
+<!--APARTADO de FUNCIONES FLECHA-->
 
-        <div class="caja">
+  <div class="caja">
         <label for="activo7"> 
             <h3>FUNCIONES FLECHA</h3>
         </label>
-        <input type="checkbox" id="activo7" hidden>
-        <div id="container-funcionflecha">
-Una función flecha (arrow function) es una forma más corta y moderna de escribir funciones en JavaScript.
-Se llama asi por que usa una flecha (=>) para separar los parámetros del cuerpo de la función.
-        
-           <br> <br> FUNCION CLASICA: <br> <br> 
-<strong> function saludar(nombre) {return "Hola"+ nombre;} </strong>
+              <input type="checkbox" id="activo7" hidden>
+ <div id="container-funcionflecha">
+         Una función flecha (arrow function) es una forma más corta y moderna de escribir funciones en JavaScript.
+         Se llama asi por que usa una flecha (=>) para separar los parámetros del cuerpo de la función.
+                        
+         <br><br> FUNCION CLASICA: <br> <br> 
+                <strong> function saludar(nombre) {return "Hola"+ nombre;} </strong>
 
- <br><br> FUNCION FLECHA: <br><br>
-<strong> const saludarFlecha = (nombre) => { return "Hola" + nombre; };
+        <br><br> FUNCION FLECHA: <br><br>
+                <strong> const saludarFlecha = (nombre) => { return "Hola" + nombre; };
+ </div>
+ </div>
 
- </strong></strong>
-        </div>
-    </div>
+    <!--APARTADO de Script-->  
+
 
         <button id="btn-back-to-top" class="btn-back-to-top" title="Volver arriba">↑</button>
         <script src="scriptfb.js"> </script>
