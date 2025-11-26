@@ -16,7 +16,7 @@
 
     <div id="navbar-container"></div>
 
-    <div class="caja">
+    <div class="caja" id="rest-container">
         <h1>PARÁMETRO REST</h1>
         <p>Los parámetros REST permiten a una función recibir un número indefinido de argumento como un array.
             <br>
@@ -43,13 +43,16 @@ function showName(firstName, lastName, ...titles) {
         </pre>
         </p>
 
-        <button class="btn-caja" onclick="showName('Mary', 'Shelley', 'Escritora', 'Cantante', 'Actriz')">Ejemplo
-            1</button>
-        <button class="btn-caja" onclick="max(5, 8, 10, 100, -1, 8, 70, 50, 1598, -9, 50, 71)">Ejemplo
-            2</button>
+        <div class="btn-containers">
+            <button class="btn-caja" onclick="showName('Mary', 'Shelley', 'Escritora', 'Cantante', 'Actriz')">Ejemplo
+                1</button>
+            <button class="btn-caja" onclick="max(5, 8, 10, 100, -1, 8, 70, 50, 1598, -9, 50, 71)">Ejemplo
+                2</button>
+            <button class="btn-caja" onclick="limpiarConsola()">Limpiar</button>
+        </div>
     </div>
 
-    <div class="caja">
+    <div class="caja" id="spread-container">
         <h1>OPERADOR SPREAD</h1>
         <p>El operador SPREAD es similar a los parámetros rest, también usa ... , pero hace exactamente lo opuesto.
             <br>
@@ -104,7 +107,7 @@ function showName(firstName, lastName, ...titles) {
                 alert(actualizado); 
                 <br>
             </pre>
-            <button class="btn-caja" onclick="agregarElementosArray()">Agregar elementos array</button>
+                <button class="btn-caja" onclick="agregarElementosArray()">Agregar elementos array</button>
                 <li>
                     <h3>Concatenar arrays:</h3>
                 </li>
@@ -118,7 +121,7 @@ function showName(firstName, lastName, ...titles) {
             alert(arrayConcatenado); 
             <br>
         </pre>
-        <button class="btn-caja" onclick="concatenarArrays()">Concatenar arrays</button>
+                <button class="btn-caja" onclick="concatenarArrays()">Concatenar arrays</button>
                 <li>
                     <h3>Manipulación de dos arrays anidados:</h3>
                 </li>
@@ -127,9 +130,11 @@ function showName(firstName, lastName, ...titles) {
             <br>
             const matrices = [[1, 2], [3, 4]];
             const combinada = [].concat(...matrices);
-            console.log(combinada); 
+            alert(combinada); 
             <br>
         </pre>
+                <button class="btn-caja" onclick="manipulacionArraysAnidados()">Manipulación de dos arrays
+                    anidados</button>
                 <li>
                     <h3>Pasar argumentos a una función:</h3>
                 </li>
@@ -145,9 +150,10 @@ function showName(firstName, lastName, ...titles) {
                 
                 const resultado = sumar(...numbers);
                 
-                console.log(resultado); 
+                alert(resultado); 
                 <br>
             </pre>
+                <button class="btn-caja" onclick="pasarArgumentosFuncion()">Pasar array como parametro</button>
                 <li>
                     <h3>Desestructuración y spread:</h3>
                 </li>
@@ -159,10 +165,10 @@ function showName(firstName, lastName, ...titles) {
                 
                 const { nombre, ...resto } = persona;
                 
-                console.log(nombre); 
-                console.log(resto); 
+                alert("Nombre: " + nombre + "\nResto: " + resto); 
                 <br>
             </pre>
+                <button class="btn-caja" onclick="desestructuracionYSpread()">Desestructuración y spread</button>
             </ul>
         </div>
 

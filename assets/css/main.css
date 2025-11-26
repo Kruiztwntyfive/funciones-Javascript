@@ -238,6 +238,18 @@ nav a:hover {
     transform: translate3d(0, 5px, 0);
 }
 
+.btn-containers {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+}
+
+.btn-containers button:nth-last-child(1) {
+    margin-left: auto;
+}
+
 #sintaxis-container {
     display: none;
 }
@@ -268,4 +280,30 @@ nav a:hover {
 
 #caja-funciones-organicas:checked+#funciones-organicas-container {
     display: block;
+}
+
+
+
+
+
+/* Syntax Highlighting */
+.keyword {
+    color: #ff79c6;
+    /* Pink/Purple for keywords like const, let, function, return */
+    font-weight: bold;
+}
+
+.function {
+    color: #8be9fd;
+    /* Cyan for function names */
+}
+
+.property {
+    color: #e7961c;
+    /* Orange for property names */
+}
+
+.comment {
+    color: #6a9955;
+    /* Green for comments */
 }
